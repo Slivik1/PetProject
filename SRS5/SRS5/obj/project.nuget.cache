@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "dgSpecHash": "orO26kib3PBBcFYVyifiyOG1ovqe8svhv15GB2D6jcnHOWllNQy0YpaHhDT2uMx35wirIFxs2ozxDw/NmGITvw==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\root\\Documents\\GitHub\\PetProject\\SRS5\\SRS5\\SRS5.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Не удалось найти пакет Microsoft.Data.SqlClient. Пакеты с таким идентификатором отсутствуют в следующих источниках пакетов: Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.Data.SqlClient",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Не удалось найти пакет System.Data.SqlClient. Пакеты с таким идентификатором отсутствуют в следующих источниках пакетов: Microsoft Visual Studio Offline Packages",
+      "libraryId": "System.Data.SqlClient",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Не удалось найти пакет MySqlConnector. Пакеты с таким идентификатором отсутствуют в следующих источниках пакетов: Microsoft Visual Studio Offline Packages",
+      "libraryId": "MySqlConnector",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
