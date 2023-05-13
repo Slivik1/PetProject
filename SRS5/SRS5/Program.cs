@@ -4,8 +4,8 @@
     {
         static void Main()
         {
-            Class1 class1 = new Class1();
-            class1.S();
+            ConsoleWorker worker = new ConsoleWorker();
+            worker.PrintMenu();
         }
     }
 }

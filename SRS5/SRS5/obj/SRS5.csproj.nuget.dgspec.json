@@ -1,27 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\root\\Documents\\GitHub\\PetProject\\SRS5\\SRS5\\SRS5.csproj": {}
+    "C:\\Users\\bosss\\Documents\\vue\\PetProject\\SRS5\\SRS5\\SRS5.csproj": {}
   },
   "projects": {
-    "C:\\Users\\root\\Documents\\GitHub\\PetProject\\SRS5\\SRS5\\SRS5.csproj": {
+    "C:\\Users\\bosss\\Documents\\vue\\PetProject\\SRS5\\SRS5\\SRS5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\root\\Documents\\GitHub\\PetProject\\SRS5\\SRS5\\SRS5.csproj",
+        "projectUniqueName": "C:\\Users\\bosss\\Documents\\vue\\PetProject\\SRS5\\SRS5\\SRS5.csproj",
         "projectName": "SRS5",
-        "projectPath": "C:\\Users\\root\\Documents\\GitHub\\PetProject\\SRS5\\SRS5\\SRS5.csproj",
-        "packagesPath": "C:\\Users\\root\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\root\\Documents\\GitHub\\PetProject\\SRS5\\SRS5\\obj\\",
+        "projectPath": "C:\\Users\\bosss\\Documents\\vue\\PetProject\\SRS5\\SRS5\\SRS5.csproj",
+        "packagesPath": "C:\\Users\\bosss\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bosss\\Documents\\vue\\PetProject\\SRS5\\SRS5\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\root\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bosss\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {

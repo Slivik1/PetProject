@@ -17,6 +17,7 @@ namespace SRS5
             {
                 SqlCommand sqlCommand = new SqlCommand(query, Connection);
                 Connection.Open();
+                Console.WriteLine(Connection.State);
                 var reader = sqlCommand.ExecuteReader();
             }
             catch (SqlException ex) 

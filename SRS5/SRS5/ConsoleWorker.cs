@@ -3,7 +3,7 @@
     internal class ConsoleWorker
     {
         protected Mapper mapper;
-        protected triangle triangle;
+        protected Triangle triangle;
         protected triangle_type type;
 
         protected string _tableName;
@@ -21,7 +21,7 @@
 
             if (_tableName == "Triangle")
             {
-                triangle = (triangle)mapper.Find(id);
+                triangle = (Triangle)mapper.Find(id);
                 if (triangle != null) Console.WriteLine(triangle.GetColumns());
             }
             else
@@ -102,7 +102,7 @@
                 switch (tableChoose)
                 {
                     case 1: mapper = new Mapper("Triangle"); _tableName = "Triangle"; break;
-                    case 2: mapper = new Mapper("Type_triangle"); _tableName = "Type_triangle"; break;
+                    case 2: mapper = new Mapper("type_triangle"); _tableName = "type_triangle"; break;
 
                     default:
                         Console.WriteLine("\nНеверная команда.");

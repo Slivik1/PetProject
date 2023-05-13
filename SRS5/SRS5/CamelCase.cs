@@ -6,9 +6,9 @@
         public static DomainObject GetClassName(string _tableName)
         {
             string _myClassName;
-            if (_tableName == "triangle")
+            if (_tableName == "Triangle")
             {
-                domainObject = new triangle();
+                domainObject = new Triangle();
             }
             else
             {

@@ -1,11 +1,11 @@
 ﻿namespace SRS5
 {
-    public class triangle : DomainObject
+    public class Triangle : DomainObject
     {
         public int Corner1;
         public int Corner2;
         triangle_type? triangle_type;
-        public triangle_type? triangle_Type
+        public triangle_type? Triangle_Type
         {
             set
             {
@@ -36,8 +36,8 @@
         {
             return triangle_type;
         }
-        public triangle() : base() { }
-        public triangle(List<string> _params) : base(_params) { }
+        public Triangle() : base() { }
+        public Triangle(List<string> _params) : base(_params) { }
         protected override void LoadObject(List<string> _params)
         {
             Corner1 = Convert.ToInt32(_params[1]);
@@ -87,35 +87,5 @@
 
             }
         }
-        //public triangle(int id) : base(id)
-        //{
-        //    Triangle_Type_Id = 1;
-        //}
-        //public triangle(int corner1, int corner2, int TriangleTypeId) : base(0)
-        //{
-        //    if (corner1 + corner2 < 180)
-        //    {
-        //        this.corner1 = corner1;
-        //        this.corner2 = corner2;
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("Сумма двух углов не может быть больше или равна 180 градусам");
-        //    }
-        //    Triangle_Type_Id = TriangleTypeId;
-        //}
-        //public triangle(int id, int corner1, int corner2, int TriangleTypeId) : base(id)
-        //{
-        //    if (corner1 + corner2 < 180)
-        //    {
-        //        this.corner1 = corner1;
-        //        this.corner2 = corner2;
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("Сумма двух углов не может быть больше или равна 180 градусам");
-        //    }
-        //    Triangle_Type_Id = TriangleTypeId;
-    //}
     }
 }
