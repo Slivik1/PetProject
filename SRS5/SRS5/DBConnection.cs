@@ -5,6 +5,8 @@ namespace SRS5
     internal class DBConnection
     {
         private SqlConnection Connection;
+        List<string> Data = new List<string>();
+        List<int> IntValues = new List<int>();
         public DBConnection(string DMS)
         {
             Connection = new SqlConnection(DMS);
@@ -17,8 +19,31 @@ namespace SRS5
             {
                 SqlCommand sqlCommand = new SqlCommand(query, Connection);
                 Connection.Open();
-                Console.WriteLine(Connection.State);
                 var reader = sqlCommand.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        for (var i = 0; i < reader.FieldCount; i++)
+                        {
+                            var values = reader.GetValue(i);
+                            var typeValues = values.GetType();
+                            var typeI = i.GetType();
+                            if (typeValues.Equals(typeI))
+                            {
+                                IntValues.Add((int)values);
+                                foreach (var intValue in IntValues)
+                                {
+                                    Data.Add(intValue.ToString());
+                                }
+                            }
+                            else
+                            {
+                                Data.Add((string)values);
+                            }
+                        }
+                    }
+                }
             }
             catch (SqlException ex) 
             {
@@ -29,7 +54,7 @@ namespace SRS5
                 Console.WriteLine(ex.Message);
             }
             Connection.Close(); 
-            return new List<string>();
+            return Data;
         }
         public void InsertQuery(string query)
         {

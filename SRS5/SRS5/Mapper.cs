@@ -21,12 +21,11 @@ namespace SRS5
         {
             string query = $"SELECT * FROM {TableName} WHERE id = {id}";
             List<string> Data = Connection.SelectQuery(query);
-            Data = SelectRes(id);
             return GetObj(TableName, Data);
         }
-        public void Save(DomainObject domainObject)
+        public void Save(DomainObject domainObject, int id)
         {
-            if (Find(domainObject.GetId()) != null)
+            if (Find(id) == null)
             {
                 string query = $"INSERT INTO {TableName} VALUES ({domainObject.GetColumns()})";
                 Connection.InsertQuery(query);
@@ -48,28 +47,22 @@ namespace SRS5
         protected DomainObject GetObj(string _tableName, List<string> _params)
         {
             ObjectWatcher objectWatcher = ObjectWatcher.GetInstance();
-            DomainObject domainObject = objectWatcher.GetObject($"{_tableName}_{_params[0]}");
-            if (domainObject == null) 
+            if (_params.Count == 0)
             {
-                DomainObject _myClassName = CamelCase.GetClassName(_tableName);
-                var t = _myClassName.GetType();
-                ConstructorInfo? ci = t.GetConstructor(new Type[] { typeof (List<string>) });
-                domainObject =  (DomainObject)ci.Invoke(new object[] { _params });
-                objectWatcher.Add($"{_tableName}_{_params[0]}", domainObject);
-            }
-            return domainObject;
-
-        }
-        protected List<string> SelectRes(int id)
-        {
-            if (TableName == "triangle_type")
-            {
-                return new List<string> { Convert.ToString(id), "Прямоугольный треугольник", "Имеет угол 90 градусов" };
+                Console.WriteLine("Объект не найден!");
+                return null;
             }
             else
             {
-                return new List<string> { Convert.ToString(id), "2" , "12", "1" };
+                DomainObject _myClassName = CamelCase.GetClassName(_tableName, _params);
+                var classType = _myClassName.GetType();
+                ConstructorInfo? ci = classType.GetConstructor(new Type[] { typeof(List<string>) });
+                DomainObject domainObject = (DomainObject)ci.Invoke(new object[] { _params });
+                objectWatcher.Add($"{_params[0]}", domainObject);
+                objectWatcher.GetObject($"{_params[0]}");
+                return domainObject;
             }
+
         }
     }
 }

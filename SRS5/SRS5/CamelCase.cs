@@ -3,16 +3,15 @@
     internal class CamelCase
     {
         static DomainObject? domainObject;
-        public static DomainObject GetClassName(string _tableName)
+        public static DomainObject GetClassName(string _tableName, List<string> _params)
         {
-            string _myClassName;
             if (_tableName == "Triangle")
             {
-                domainObject = new Triangle();
+                domainObject = new Triangle(_params);
             }
             else
             {
-                domainObject = new triangle_type();
+                domainObject = new TriangleType(_params);
             }
             return domainObject;
         }

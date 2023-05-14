@@ -4,19 +4,20 @@
     {
         public int Corner1;
         public int Corner2;
-        triangle_type? triangle_type;
-        public triangle_type? Triangle_Type
+        public int TriangleTypeId;
+        TriangleType? triangleType;
+        public TriangleType? Triangle_Type
         {
             set
             {
-                triangle_type = value;
+                triangleType = value;
             }
             get
             {
-                if (Triangle_Type_Id > 0)
+                if (TriangleTypeId > 0)
                 {
                     Mapper TTM = new Mapper("triangle_type");
-                    triangle_type = (triangle_type)TTM.Find(Triangle_Type_Id);
+                    triangleType = (TriangleType)TTM.Find(TriangleTypeId);
                 }
                 else
                 {
@@ -26,15 +27,15 @@
                     }
                     else
                     {
-                        triangle_type = null;
+                        triangleType = null;
                     }    
                 }
-                return triangle_type;
+                return triangleType;
             }
         }
-        public triangle_type GetType()
+        public TriangleType GetType()
         {
-            return triangle_type;
+            return triangleType;
         }
         public Triangle() : base() { }
         public Triangle(List<string> _params) : base(_params) { }
@@ -42,50 +43,16 @@
         {
             Corner1 = Convert.ToInt32(_params[1]);
             Corner2 = Convert.ToInt32(_params[2]);
-            Triangle_Type_Id = Convert.ToInt32(_params[3]);
+            TriangleTypeId = Convert.ToInt32(_params[3]);
         }
 
         public override string GetColumns()
         {
-            return $"{Corner1}, {Corner2}, {Triangle_Type_Id}";
+            return $"{Corner1}, {Corner2}, {TriangleTypeId}";
         }
         public override string GetUpdateColumns()
         {
             return $"Corner1 = {Corner1}, Corner2 = {Corner2}";
-        }
-        public int Triangle_Type_Id
-        {
-            set
-            {
-                if (value > 0)
-                {
-                    Mapper TTM = new Mapper("triangle_type");
-                    triangle_type = (triangle_type)TTM.Find(value);
-                }
-                else
-                {
-                    if (GetId() != 0)
-                    {
-                        throw new Exception("Ошибка!");
-                    }
-                    else
-                    {
-                        triangle_type = null;
-                    }
-                }
-            }
-            get
-            {
-                if (triangle_type != null)
-                {
-                    return triangle_type.GetId();
-                }
-                else
-                {
-                    return 0;
-                }
-
-            }
         }
     }
 }

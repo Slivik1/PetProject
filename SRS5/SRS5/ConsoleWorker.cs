@@ -4,9 +4,9 @@
     {
         protected Mapper mapper;
         protected Triangle triangle;
-        protected triangle_type type;
+        protected TriangleType type;
 
-        protected string _tableName;
+        protected string TableName;
 
         public void SelectQueue()
         {
@@ -16,29 +16,32 @@
             if (id <= 0)
             {
                 Console.WriteLine("Некорректный id...");
-                return;
             }
 
-            if (_tableName == "Triangle")
+            if (TableName == "Triangle")
             {
                 triangle = (Triangle)mapper.Find(id);
-                if (triangle != null) Console.WriteLine(triangle.GetColumns());
+                if (triangle != null) 
+                {
+                    Console.WriteLine(triangle.GetColumns());
+                }
             }
             else
             {
-                type = (triangle_type)mapper.Find(id);
-                if (type != null) Console.WriteLine(type.GetColumns());
+                type = (TriangleType)mapper.Find(id);
+                if (type != null) 
+                {
+                    Console.WriteLine(type.GetColumns());
+                }
             }
-
             PrintMenu();
         }
-
         public void SaveQueue()
         {
-            if (_tableName == "Triangle")
+            if (TableName == "Triangle")
             {
                 Console.WriteLine("Введите id треугольника...");
-                string id = Console.ReadLine();
+                int id = Convert.ToInt32(Console.ReadLine());
 
                 Console.WriteLine("Введите первый угол треугольника...");
                 string corner1 = Console.ReadLine();
@@ -49,26 +52,23 @@
                 Console.WriteLine("Введите номер типа треугольника...");
                 string type = Console.ReadLine();
 
-
-
-                triangle = new(new List<string> { id, corner1, corner2, type });
-                mapper.Save(triangle);
+                triangle = new(new List<string> { Convert.ToString(id), corner1, corner2, type });
+                mapper.Save(triangle, id);
             }
             else
             {
                 Console.WriteLine("Введите id типа...");
-                string id = Console.ReadLine();
+                int id = Convert.ToInt32(Console.ReadLine());
 
                 Console.WriteLine("Введите название треугольника...");
-                string Type_T = Console.ReadLine();
+                string name = Console.ReadLine();
 
                 Console.WriteLine("Введите описание типа треугольника...");
                 string desr = Console.ReadLine();
 
-                type = new(new List<string> { id, Type_T, desr });
-                mapper.Save(type);
+                type = new(new List<string> { Convert.ToString(id), name, desr });
+                mapper.Save(type, id);
             }
-
             PrintMenu();
         }
 
@@ -80,20 +80,18 @@
             if (id <= 0)
             {
                 Console.WriteLine("Некорректный id...");
-                return;
             }
 
             mapper.Delete(id);
             PrintMenu();
         }
-
         public void PrintMenu()
         {
             int tableChoose;
             int operationChoose;
 
             Console.WriteLine("\n----------ВЫБЕРИТЕ ТАБЛИЦУ---------");
-            Console.WriteLine("1. 'Triangle'.\n2. 'Type_triangle'.\n");
+            Console.WriteLine("1. 'Triangle'.\n2. 'TriangleType'.\n");
 
             bool isNumber = int.TryParse(Console.ReadLine(), out tableChoose);
 
@@ -101,8 +99,8 @@
             {
                 switch (tableChoose)
                 {
-                    case 1: mapper = new Mapper("Triangle"); _tableName = "Triangle"; break;
-                    case 2: mapper = new Mapper("type_triangle"); _tableName = "type_triangle"; break;
+                    case 1: mapper = new Mapper("Triangle"); TableName = "Triangle"; break;
+                    case 2: mapper = new Mapper("TriangleType"); TableName = "TriangleType"; break;
 
                     default:
                         Console.WriteLine("\nНеверная команда.");
