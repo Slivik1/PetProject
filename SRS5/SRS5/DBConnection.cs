@@ -2,6 +2,7 @@
 
 namespace SRS5
 {
+    //Класс реализующий подключение к базе данных
     internal class DBConnection
     {
         private SqlConnection Connection;

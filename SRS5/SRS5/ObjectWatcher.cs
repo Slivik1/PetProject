@@ -1,5 +1,6 @@
 ﻿namespace SRS5
 {
+    // Identity Map
     internal class ObjectWatcher
     {
         private static ObjectWatcher Instance = new ObjectWatcher();

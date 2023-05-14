@@ -1,5 +1,6 @@
 ﻿namespace SRS5
 {
+    //Класс для получения типа во время выполнения программы
     internal class CamelCase
     {
         static DomainObject? domainObject;

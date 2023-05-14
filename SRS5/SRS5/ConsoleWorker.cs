@@ -1,5 +1,6 @@
 ﻿namespace SRS5
 {
+    //Пользовальский интерфейс
     internal class ConsoleWorker
     {
         protected Mapper mapper;

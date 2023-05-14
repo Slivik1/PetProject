@@ -11,10 +11,7 @@
         { 
             this.Id = id; 
         }
-        public DomainObject()
-        {
-
-        }
+        public DomainObject() { }
         protected abstract void LoadObject(List<string> _params);
         public DomainObject(List<string> _params)
         {
