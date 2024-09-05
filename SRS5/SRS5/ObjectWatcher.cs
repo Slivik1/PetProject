@@ -1,7 +1,7 @@
 ﻿namespace SRS5
 {
-    // Identity Map
-    internal class ObjectWatcher
+    
+    internal class ObjectWatcher // Identity Map. Класс содержит словарь с объектами. Позволяет избежать дубликатов объектов.
     {
         private static ObjectWatcher Instance = new ObjectWatcher();
         private ObjectWatcher() { }
@@ -10,7 +10,7 @@
             return Instance;
         }
         private Dictionary<string, DomainObject> ObjectsMap = new Dictionary<string, DomainObject>();
-        public DomainObject GetObject(string object_id)
+        public DomainObject GetObject(string object_id)  // Метод, получающий объекты из словаря.
         {
             if (ObjectsMap.ContainsKey(object_id))
             {

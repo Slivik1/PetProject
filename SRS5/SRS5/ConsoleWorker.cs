@@ -1,7 +1,6 @@
 ﻿namespace SRS5
 {
-    //Пользовальский интерфейс
-    internal class ConsoleWorker
+    internal class ConsoleWorker // Класс, отделяющий пользователя от системы. Является прослойкой между пользователем и системой.
     {
         protected Mapper mapper;
         protected Triangle triangle;
@@ -9,7 +8,9 @@
 
         protected string TableName;
 
-        public void SelectQueue()
+
+        // Все нижепредставленные методы обращаются к классу Mapper
+        public void SelectQueue() // Метод, общающийся к классу Mapper для поиска заданного объекта
         {
             Console.WriteLine("Введите id объекта, который нужно вывести...");
             int id = Convert.ToInt32(Console.ReadLine());
@@ -37,7 +38,7 @@
             }
             PrintMenu();
         }
-        public void SaveQueue()
+        public void SaveQueue() // Метод,  общающийся к классу Mapper для попытки сохранения объекта
         {
             if (TableName == "Triangle")
             {
@@ -73,7 +74,7 @@
             PrintMenu();
         }
 
-        public void DeleteQueue()
+        public void DeleteQueue() // Метод,  общающийся к классу Mapper для удаления заданного объекта
         {
             Console.WriteLine("Введите id объекта, который нужно удалить...");
             int id = Convert.ToInt32(Console.ReadLine());
@@ -86,7 +87,7 @@
             mapper.Delete(id);
             PrintMenu();
         }
-        public void PrintMenu()
+        public void PrintMenu() // Метод, выводящий весь функционал системы в виде главного меню
         {
             int tableChoose;
             int operationChoose;

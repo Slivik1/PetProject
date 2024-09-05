@@ -2,8 +2,7 @@
 
 namespace SRS5
 {
-    //Класс реализующий подключение к базе данных
-    internal class DBConnection
+    internal class DBConnection //Класс, реализующий подключение к базе данных
     {
         private SqlConnection Connection;
         List<string> Data = new List<string>();
@@ -13,7 +12,7 @@ namespace SRS5
             Connection = new SqlConnection(DMS);
             Console.WriteLine($"Log: Подключение к {DMS} установлено!");
         }
-        public List<string> SelectQuery(string query)
+        public List<string> SelectQuery(string query) // SELECT-запрос к базе данных c последующим чтением ответа 
         {
             Console.WriteLine($"Log: выполняется select-запрос {query}");
             try
@@ -57,7 +56,7 @@ namespace SRS5
             Connection.Close(); 
             return Data;
         }
-        public void InsertQuery(string query)
+        public void InsertQuery(string query) // INSERT-запрос к базе данных
         {
             try
             {
@@ -76,7 +75,7 @@ namespace SRS5
             }
             Connection.Close();
         }
-        public void UpdateQuery(string query)
+        public void UpdateQuery(string query) // UPDATE-запрос к базе данных
         {
             try
             {
@@ -95,7 +94,7 @@ namespace SRS5
             }
             Connection.Close();
         }
-        public void DeleteQuery(string query)
+        public void DeleteQuery(string query) // DELETE-запрос к базе данных
         {
 
             Console.WriteLine($"Log: выполняется delete-запрос {query}");

@@ -10,20 +10,24 @@ namespace SRS5
             this.TableName = TableName;
             if (Connection == null) 
             {
-                Connection = new DBConnection($@"Data Source = DESKTOP-4AM24DD\MSSQLSERVER01; Initial Catalog = OOP; Integrated Security = true; TrustServerCertificate=True");
+                Connection = new DBConnection($@"Data Source = SLIVIK; Initial Catalog = TrianglesMad; 
+                                              Integrated Security = true; TrustServerCertificate=True");
             }
         }
-        public DomainObject Find(int id)
+        public DomainObject Find(int id) // Метод, возвращающий результат вывода метода SelectStmt.
+                                         // В результате будет выдан объект из словаря, если он существует
         {
             return SelectStmt(id);
         }
-        protected DomainObject SelectStmt(int id)
+        protected DomainObject SelectStmt(int id)  // Метод, возвращающий результат вывода метода GetObj 
         {
             string query = $"SELECT * FROM {TableName} WHERE id = {id}";
             List<string> Data = Connection.SelectQuery(query);
             return GetObj(TableName, Data);
         }
-        public void Save(DomainObject domainObject, int id)
+        public void Save(DomainObject domainObject, int id) // Метод, создающий UPDATE-запрос к базе данных, если заданный объект существует,
+                                                            // в противном случае создается INSERT-запрос
+                                                            // После передает запрос в класс DBConnection
         {
             if (Find(id) == null)
             {
@@ -36,7 +40,8 @@ namespace SRS5
                 Connection.UpdateQuery(query);
             }
         }
-        public void Delete(int id) 
+        public void Delete(int id) // Метод, создающий DELETE-запрос к базе данных, если заданный объект существует
+                                   // После передает запрос в класс DBConnection
         {
             if (Find(id) != null) 
             {
@@ -44,7 +49,7 @@ namespace SRS5
                 Connection.DeleteQuery(query);
             }
         }
-        protected DomainObject GetObj(string _tableName, List<string> _params)
+        protected DomainObject GetObj(string _tableName, List<string> _params) // Метод, обращающийся к словарю за поиском заданного объекта
         {
             ObjectWatcher objectWatcher = ObjectWatcher.GetInstance();
             if (_params.Count == 0)

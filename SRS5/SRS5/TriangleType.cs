@@ -1,24 +1,22 @@
 ﻿namespace SRS5
 {
-    // Класс типов треугольников. Полное отображение таблицы TriangleType из базы данных.
-    public class TriangleType : DomainObject
+
+    public class TriangleType : DomainObject // Класс типов треугольников. Полное отображение таблицы TriangleType из базы данных.
     {
         public string NameType;
         public string TypeDescription;
         public TriangleType() : base() { }
         public TriangleType(List<string> _params) : base(_params) { }
-        protected override void LoadObject(List<string> _params)
+        protected override void LoadObject(List<string> _params) // Загрузка объекта(тип треугольника)
         {
             NameType = Convert.ToString(_params[1]);
             TypeDescription = Convert.ToString(_params[2]);
         }
-        //Получение значений полей класса для INSERT запроса
-        public override string GetColumns()
+        public override string GetColumns() //Получение значений полей класса для INSERT запроса
         {
             return $"{GetId()}, '{NameType}', '{TypeDescription}'";
         }
-        //Получение значений полей класса для UPDATE запроса
-        public override string GetUpdateColumns()
+        public override string GetUpdateColumns() //Получение значений полей класса для UPDATE запроса
         {
             return $"NameType = '{NameType}', TypeDescription = '{TypeDescription}'";
         }

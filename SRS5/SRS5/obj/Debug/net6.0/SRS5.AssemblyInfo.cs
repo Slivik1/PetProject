@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SRS5")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba5b4aecce4c89778b2fbae5b2de14d3473167d5")]
 [assembly: System.Reflection.AssemblyProductAttribute("SRS5")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SRS5")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
