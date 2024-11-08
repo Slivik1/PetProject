@@ -14,7 +14,7 @@
         }
         public override string GetColumns() //Получение значений полей класса для INSERT запроса
         {
-            return $"{GetId()}, '{NameType}', '{TypeDescription}'";
+            return $"'{NameType}', '{TypeDescription}'";
         }
         public override string GetUpdateColumns() //Получение значений полей класса для UPDATE запроса
         {

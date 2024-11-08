@@ -31,7 +31,7 @@
             else
             {
                 type = (TriangleType)mapper.Find(id);
-                if (type != null) 
+                if (type != null)
                 {
                     Console.WriteLine(type.GetColumns());
                 }
@@ -46,16 +46,23 @@
                 int id = Convert.ToInt32(Console.ReadLine());
 
                 Console.WriteLine("Введите первый угол треугольника...");
-                string corner1 = Console.ReadLine();
+                int corner1 = Convert.ToInt32(Console.ReadLine());
 
                 Console.WriteLine("Введите второй угол треугольника...");
-                string corner2 = Console.ReadLine();
+                int corner2 = Convert.ToInt32(Console.ReadLine());
 
                 Console.WriteLine("Введите номер типа треугольника...");
                 string type = Console.ReadLine();
 
-                triangle = new(new List<string> { Convert.ToString(id), corner1, corner2, type });
-                mapper.Save(triangle, id);
+                if (corner1 + corner2 < 180)
+                {
+                    triangle = new(new List<string> { Convert.ToString(id), Convert.ToString(corner1), Convert.ToString(corner2), type });
+                    mapper.Save(triangle, id);
+                }
+                else
+                {
+                    Console.WriteLine("Треугольник не существует");
+                }
             }
             else
             {

@@ -26,34 +26,21 @@ namespace SRS5
                     {
                         for (var i = 0; i < reader.FieldCount; i++)
                         {
-                            var values = reader.GetValue(i);
-                            var typeValues = values.GetType();
-                            var typeI = i.GetType();
-                            if (typeValues.Equals(typeI))
-                            {
-                                IntValues.Add((int)values);
-                                foreach (var intValue in IntValues)
-                                {
-                                    Data.Add(intValue.ToString());
-                                }
-                            }
-                            else
-                            {
-                                Data.Add((string)values);
-                            }
+                            var value = reader.GetValue(i);
+                            Data.Add(Convert.ToString(value));
                         }
                     }
                 }
             }
-            catch (SqlException ex) 
+            catch (SqlException ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            catch(Exception ex) 
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            Connection.Close(); 
+            Connection.Close();
             return Data;
         }
         public void InsertQuery(string query) // INSERT-запрос к базе данных

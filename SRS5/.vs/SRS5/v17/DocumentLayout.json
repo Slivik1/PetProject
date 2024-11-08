@@ -3,36 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\bosss\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\PetProject\\SRS5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|c:\\users\\bosss\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\petproject\\srs5\\srs5\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|solutionrelative:srs5\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|c:\\users\\bosss\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\petproject\\srs5\\srs5\\objectwatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|solutionrelative:srs5\\objectwatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|c:\\users\\bosss\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\petproject\\srs5\\srs5\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|solutionrelative:srs5\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|c:\\users\\bosss\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\petproject\\srs5\\srs5\\triangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|solutionrelative:srs5\\triangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|c:\\users\\bosss\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\petproject\\srs5\\srs5\\consoleworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|solutionrelative:srs5\\consoleworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|c:\\users\\bosss\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\petproject\\srs5\\srs5\\camelcase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|solutionrelative:srs5\\camelcase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|c:\\users\\bosss\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\petproject\\srs5\\srs5\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|solutionrelative:srs5\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|c:\\users\\bosss\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\petproject\\srs5\\srs5\\domainobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|solutionrelative:srs5\\domainobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|c:\\users\\bosss\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\petproject\\srs5\\srs5\\triangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|solutionrelative:srs5\\triangle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|c:\\users\\bosss\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\petproject\\srs5\\srs5\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|solutionrelative:srs5\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|c:\\users\\bosss\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\petproject\\srs5\\srs5\\objectwatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|solutionrelative:srs5\\objectwatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|c:\\users\\bosss\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\petproject\\srs5\\srs5\\triangletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|solutionrelative:srs5\\triangletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|c:\\users\\bosss\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\petproject\\srs5\\srs5\\camelcase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|solutionrelative:srs5\\camelcase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D3FD920C-FD3B-4217-A82E-572D0C2C2B42}|SRS5\\SRS5.csproj|c:\\users\\bosss\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\petproject\\srs5\\srs5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
@@ -62,100 +62,102 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Mapper.cs",
               "DocumentMoniker": "C:\\Users\\bosss\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\PetProject\\SRS5\\SRS5\\Mapper.cs",
               "RelativeDocumentMoniker": "SRS5\\Mapper.cs",
               "ToolTip": "C:\\Users\\bosss\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\PetProject\\SRS5\\SRS5\\Mapper.cs",
               "RelativeToolTip": "SRS5\\Mapper.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAIwCoAAABEAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAIAywCYAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-04T12:58:14.872Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "DBConnection.cs",
               "DocumentMoniker": "C:\\Users\\bosss\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\PetProject\\SRS5\\SRS5\\DBConnection.cs",
               "RelativeDocumentMoniker": "SRS5\\DBConnection.cs",
               "ToolTip": "C:\\Users\\bosss\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\PetProject\\SRS5\\SRS5\\DBConnection.cs",
               "RelativeToolTip": "SRS5\\DBConnection.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAwwFEAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBoAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T12:58:14.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-04T12:58:14.892Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "ObjectWatcher.cs",
               "DocumentMoniker": "C:\\Users\\bosss\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\PetProject\\SRS5\\SRS5\\ObjectWatcher.cs",
               "RelativeDocumentMoniker": "SRS5\\ObjectWatcher.cs",
               "ToolTip": "C:\\Users\\bosss\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\PetProject\\SRS5\\SRS5\\ObjectWatcher.cs",
               "RelativeToolTip": "SRS5\\ObjectWatcher.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAlwAwAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-04T12:58:14.88Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ConsoleWorker.cs",
               "DocumentMoniker": "C:\\Users\\bosss\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\PetProject\\SRS5\\SRS5\\ConsoleWorker.cs",
               "RelativeDocumentMoniker": "SRS5\\ConsoleWorker.cs",
               "ToolTip": "C:\\Users\\bosss\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\PetProject\\SRS5\\SRS5\\ConsoleWorker.cs",
               "RelativeToolTip": "SRS5\\ConsoleWorker.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAowEwAAABmAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAA1wD8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T12:58:14.876Z"
+              "WhenOpened": "2024-09-04T12:58:14.876Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "CamelCase.cs",
               "DocumentMoniker": "C:\\Users\\bosss\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\PetProject\\SRS5\\SRS5\\CamelCase.cs",
               "RelativeDocumentMoniker": "SRS5\\CamelCase.cs",
               "ToolTip": "C:\\Users\\bosss\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\PetProject\\SRS5\\SRS5\\CamelCase.cs",
               "RelativeToolTip": "SRS5\\CamelCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-04T12:58:14.884Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "DomainObject.cs",
               "DocumentMoniker": "C:\\Users\\bosss\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\PetProject\\SRS5\\SRS5\\DomainObject.cs",
               "RelativeDocumentMoniker": "SRS5\\DomainObject.cs",
               "ToolTip": "C:\\Users\\bosss\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\PetProject\\SRS5\\SRS5\\DomainObject.cs",
               "RelativeToolTip": "SRS5\\DomainObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAB1AAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAIAzwBgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-04T12:58:14.888Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Triangle.cs",
               "DocumentMoniker": "C:\\Users\\bosss\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\PetProject\\SRS5\\SRS5\\Triangle.cs",
               "RelativeDocumentMoniker": "SRS5\\Triangle.cs",
               "ToolTip": "C:\\Users\\bosss\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\PetProject\\SRS5\\SRS5\\Triangle.cs",
               "RelativeToolTip": "SRS5\\Triangle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T12:58:14.896Z"
+              "WhenOpened": "2024-09-04T12:58:14.896Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "TriangleType.cs",
               "DocumentMoniker": "C:\\Users\\bosss\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\PetProject\\SRS5\\SRS5\\TriangleType.cs",
               "RelativeDocumentMoniker": "SRS5\\TriangleType.cs",
               "ToolTip": "C:\\Users\\bosss\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\PetProject\\SRS5\\SRS5\\TriangleType.cs",
               "RelativeToolTip": "SRS5\\TriangleType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T12:58:14.9Z"
+              "WhenOpened": "2024-09-04T12:58:14.9Z",
+              "EditorCaption": ""
             }
           ]
         }

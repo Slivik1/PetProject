@@ -65,6 +65,7 @@ namespace SRS5
                 DomainObject domainObject = (DomainObject)ci.Invoke(new object[] { _params });
                 objectWatcher.Add($"{_params[0]}", domainObject);
                 objectWatcher.GetObject($"{_params[0]}");
+                _params.Clear();
                 return domainObject;
             }
 
